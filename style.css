@@ -94,7 +94,8 @@ body {
 }
 .usernameArea span {
   display: block;
-  font-size: large;
+  font-size: 20px;
+  margin-top: 5px;
 }
 .bigUsername {
   display: flex;
@@ -117,6 +118,7 @@ body {
   border-radius: 100px;
   border: none;
   margin-right: 30px;
+  cursor: pointer;
 }
 .menu {
   background-color: rgb(25 146 212);
@@ -144,6 +146,7 @@ body {
 .menu ul li {
   margin: 27px 0 0 5px;
   font-weight: 700;
+  cursor: pointer;
 }
 .menu > ul img {
   filter: invert(1);
@@ -189,17 +192,27 @@ h4 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .projbox {
-  padding: 30px 75px 30px 25px;
+  padding: 30px 25px;
   border-radius: 10px;
-  border-left: 7px solid orange;
-  box-shadow: 0 6px 10px #0000003b;
+  border-left: 10px solid rgba(243, 158, 0, 0.739);
+  box-shadow: 3px 3px 8px #0000001f;
   height: 200px;
   background-color: white;
+
+  display: flex;
+  flex-direction: column;
 }
 .projbox img {
   width: 23px;
-
-  margin-right: 5px;
+  margin-right: 10px;
+}
+.projbox p {
+  padding-right: 60px;
+}
+.projboxBtns {
+  align-self: flex-end;
+  position: absolute;
+  margin-top: 11.5rem;
 }
 
 .annonce {
@@ -209,6 +222,7 @@ h4 {
   /* grid-area: 1/2/2/3; */
   border-radius: 10px;
   min-width: 250px;
+  box-shadow: 3px 3px 8px #0000001f;
 }
 .annonce > div {
   padding: 15px 20px;
@@ -227,6 +241,7 @@ hr {
   /* grid-area: 2/2/3/3; */
   border-radius: 10px;
   min-width: 250px;
+  box-shadow: 3px 3px 8px #0000001f;
 }
 .trend > div {
   display: flex;
